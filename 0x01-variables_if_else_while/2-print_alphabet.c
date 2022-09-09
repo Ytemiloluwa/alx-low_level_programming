@@ -5,7 +5,6 @@
  *
  * Return: Always 0.
  *
- * Task 2 
  */
 int main(void)
 {
