@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-	char lowercase;
-
+     char lowercase;
      char UpperCase;
 
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
-		putchar(lowercase);
+     for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	  putchar(lowercase);
 
      for (UpperCase = 'A'; UpperCase <= 'Z'; UpperCase++)
           putchar(UpperCase);
