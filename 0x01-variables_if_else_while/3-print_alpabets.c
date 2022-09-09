@@ -1,18 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Prints the alphabet in lowercase, and then in uppercase.
  *
  * Return: Always 0.
- *
- * Task 2 
  */
 int main(void)
 {
-     char lowercase;
+	char lowercase;
+
      char UpperCase;
 
-     for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 		putchar(lowercase);
 
      for (UpperCase = 'A'; UpperCase <= 'Z'; UpperCase++)
@@ -21,3 +20,4 @@ int main(void)
 
 	return (0);
 }
+
