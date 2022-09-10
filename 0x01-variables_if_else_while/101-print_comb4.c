@@ -1,38 +1,35 @@
-#include <stdlib.h>
-#include <time.h>
+
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Prints all possible combinations of three different digits,
+ *        in ascending order, separated by a comma followed by a space.
  *
- * Description: display triple digits and ,
- *
- * Return: Always 0 (successful)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int i, j, k, l;
+	int digit1, digit2, digit3;
 
-	i = 0;
-	while (i < 1000)
+	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-		j = i / 100; /* hundreds */
-		k = (i / 10) % 10; /* tens */
-		l = i % 100; /* units */
-		if (j < k && k < l)
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 		{
-			putchar(l + '0');
-			putchar(k + '0');
-			putchar(j + '0');
-			if (i < 789)
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+				
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		i++;
 	}
+
 	putchar('\n');
 
 	return (0);
