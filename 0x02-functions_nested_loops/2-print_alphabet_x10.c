@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * print_alphabet_x10 - print all lowercase character 10times
  *
- * Return: Always 0.
+ * Description: using nested while-for loop
+ *
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
