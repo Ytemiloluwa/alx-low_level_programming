@@ -6,10 +6,11 @@
  */
 int _isdigit(int c)
 {   
-    int upper = 1;
-    int lower = 0;
+    int number = 1;
+    int otherwise = 0;
     if (c >= '0' && c <= '9')
-		return upper;
+		return number;
+
     else
-		return lower;
+		return otherwise;
 }
